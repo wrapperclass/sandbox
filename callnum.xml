@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<zs:explainResponse xmlns:zs="http://www.loc.gov/zing/srw/">
+    <zs:version>1.1</zs:version>
+    <zs:record>
+        <zs:recordSchema>http://explain.z3950.org/dtd/2.0/</zs:recordSchema>
+        <zs:recordPacking>xml</zs:recordPacking>
+        <zs:recordData>
+            <explain xmlns="http://explain.z3950.org/dtd/2.0/">
+                <serverInfo>
+                    <host>alephdev.ldschurch.org</host>
+                    <port>9991</port>
+                    <database>msd01</database>
+                </serverInfo>
+                <indexInfo>
+                    <set identifier="info:srw/cql-context-set/1/cql-v1.1" name="cql"/>
+                    <set identifier="info:srw/cql-context-set/1/dc-v1.1" name="dc"/>
+                    <set identifier="http://zing.z3950.org/cql/bath/2.0/" name="bath"/>
+                    <index id="12">
+                        <title>MSD Aleph BIB # Search (SYS)</title>
+                        <map>
+                            <name set="dc">rec.id</name>
+                        </map>
+                    </index>
+                    <index id="16">
+                        <title>MSD Call # Search (LDC)</title>
+                        <map>
+                            <name set="dc">dc.callno</name>
+                        </map>
+                    </index>
+                    <index id="4">
+                        <title>MSD Title Search (WTTL)</title>
+                        <map>
+                            <name set="dc">dc.title</name>
+                        </map>
+                    </index>
+                    <index id="21">
+                        <title>MSD Subject Search (WSU)</title>
+                        <map>
+                            <name set="dc">dc.subject</name>
+                        </map>
+                    </index>
+                    <index id="1003">
+                        <title>MSD Author / Creator Search (WAU)</title>
+                        <map>
+                            <name set="dc">dc.creator</name>
+                        </map>
+                    </index>
+                    <index id="48">
+                        <title>MSD Aleph Rosetta Sys # (RSN)</title>
+                        <map>
+                            <name set="dc">dc.identifier</name>
+                        </map>
+                    </index>
+                    <index id="50">
+                        <title>MSD Alpeh Rosetta CMS ID (CMSID)</title>
+                        <map>
+                            <name set="dc">dc.cmsid</name>
+                        </map>
+                    </index>
+                </indexInfo>
+            </explain>
+        </zs:recordData>
+    </zs:record>
+    <zs:diagnostics xmlns="http://www.loc.gov/zing/srw/diagnostic/">
+        <diagnostic>
+            <uri>info:srw/diagnostic/1/5</uri>
+            <message>Unsupported version</message>
+            <details>1.1</details>
+        </diagnostic>
+        <diagnostic>
+            <uri>info:srw/diagnostic/1/7</uri>
+            <message>Mandatory parameter not supplied</message>
+            <details>operation</details>
+        </diagnostic>
+    </zs:diagnostics>
+</zs:explainResponse>
