@@ -41,7 +41,7 @@ public class _ListTest {
         System.out.println("Removed item: " + removedName);
         // Removes last visited element which is the second element.
         iter.remove();
-		assert(staff.size() == 4);
+        assert (staff.size() == 4);
 
         System.out.println();
         System.out.println("List after removal size " + staff.size());

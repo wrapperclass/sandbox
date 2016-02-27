@@ -5,9 +5,11 @@ public class InitializersTest {
     public InitializersTest() {
         System.out.print("say... ");
     }
+
     {
         System.out.print("who ");
     }
+
     static {
         System.out.print("We ");
     }
@@ -20,9 +22,11 @@ public class InitializersTest {
             System.out.print("Ni. ");
         }
     }
+
     {
         System.out.print("the ");
     }
+
     {
         System.out.print("Knights ");
     }

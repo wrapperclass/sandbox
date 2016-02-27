@@ -41,8 +41,7 @@ public class Hash_Set {
 //				System.out.println(iter.next());
 //			}
             System.out.println(". . .");
-            System.out.println(words.size() + " distinct words " + totalTime
-                    + " milliseconds.");
+            System.out.println(words.size() + " distinct words " + totalTime + " milliseconds.");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

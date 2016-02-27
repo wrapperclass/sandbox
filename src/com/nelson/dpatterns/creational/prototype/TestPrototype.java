@@ -5,25 +5,25 @@ import java.util.Hashtable;
 /**
  * The Prototype pattern is basically the creation of new instances through cloning existing instances. By Creating a
  * prototype, new objects are created by copying this prototype.
- * <p/>
+ * <p>
  * Where to use:
- * <p/>
+ * <p>
  * When a system needs to be independent of how its objects are created, composed and represented. When adding and
  * removing objects at runtime. When specifying new objects by changing and existing objects structure. When configuring
  * an application with classes dynamically. When trying to keep the number of classes in a system to a minimum. When
  * State population is an expensive or exclusive process.
- * <p/>
+ * <p>
  * Benefits:
- * <p/>
+ * <p>
  * Speeds up instantiation of large, dynamically loaded classes. Reduced sub-classing.
- * <p/>
+ * <p>
  * Drawbacks:
- * <p/>
+ * <p>
  * Each subclass of Prototype must implement the Clone operation. Could be difficult with existing classes with internal
  * objects with circular references or which does not support copying.
- * <p/>
+ * <p>
  * Usage:
- * <p/>
+ * <p>
  * If you are designing a system for performing back account transactions, then you would want to make a copy of the
  * Object which holds your account information, perform transactions on it, and then replace the original Object with
  * the modified one. In such cases, you would want to use clone() instead of new.
